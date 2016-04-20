@@ -1,0 +1,56 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Weather Forcast</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.1/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.1/css/bootstrap-dialog.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="weatherUI.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div>
+        <div class ="row">
+            <div id="locationText" class="col-lg-6">
+                <p>Weather for </p>
+            </div>
+            <div id="pac-container" class="parent col-lg-6">
+                <input id="pac-input" class="child controls" type="text"
+                       placeholder="  Enter a new location">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="tsContainer" class="col-lg-12 parent">
+            <div class="child">
+                <input id="tempUnit" checked type="checkbox"
+                       data-toggle="toggle" data-size="medium"
+                       data-on="Metric" data-off="Imperial" data-width="100"
+                       data-onstyle="default" data-style="slow">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-2.2.2.js"
+        integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="
+        crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+        integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.1/js/bootstrap-toggle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.1/js/bootstrap-dialog.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8YsJRWvXW0hKwdw1EzeibBG0KKAspBvI&libraries=places"></script>
+<script src="weatherUI.js"></script>
+</body>
+</html>
